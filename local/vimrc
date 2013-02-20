@@ -12,7 +12,7 @@ set nocompatible
 
   runtime local/packages/pathogen/autoload/pathogen.vim
   runtime local/settings/*.vim
-  call pathogen#infect('local/packages/{}')
+  call pathogen#infect('local/packages/{}', '~/vimfiles/local/packages/{}')
 
 
 " ================ Menus =============================
