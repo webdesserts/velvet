@@ -1,5 +1,6 @@
+
 " Debugging
-set verbose=1
+set verbose=0
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -9,9 +10,18 @@ set nocompatible
 " This loads all the plugins in ~/vimfiles/bundle
 " Use tpope's pathogen plugin to manage all other plugins
 
-  runtime local/packages/tpope-vim-pathogen/autoload/pathogen.vim
+  runtime local/packages/pathogen/autoload/pathogen.vim
   runtime local/settings/*.vim
   call pathogen#infect('local/packages/{}')
+
+
+" ================ Menus =============================
+
+" M flag must be set before `syntax` and `filetype` are turned on
+set guioptions+=M "remove menu bar (from source)
+
+set guioptions-=T "remove toolbar
+set guioptions-=r "remove right-hand scroll bar
 
 " ================ General Config ====================
 
@@ -31,6 +41,7 @@ set hidden
 
 "turn on syntax highlighting
 syntax on
+
 
 " ================ Search Settings  =================
 
