@@ -1,4 +1,3 @@
-
 " Debugging
 set verbose=0
 
@@ -6,20 +5,22 @@ set verbose=0
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" =============== Pathogen Initialization ===============
+" =============== Package/Settings Initialization ===============
 " This loads all the plugins in ~/vimfiles/bundle
 " Use tpope's pathogen plugin to manage all other plugins
 
   runtime local/packages/pathogen/autoload/pathogen.vim
-  runtime local/settings/*.vim
   call pathogen#infect('local/packages/{}', '~/vimfiles/local/packages/{}')
+
+" load all scripts from the settings directory
+  runtime! local/settings/*.vim
 
 
 " ================ Menus =============================
 
 " M flag must be set before `syntax` and `filetype` are turned on
 set guioptions+=M "remove menu bar (from source)
-
+set guioptions-=L "remove left-hand scroll bar during vertical split (e.g. NERDTree)
 set guioptions-=T "remove toolbar
 set guioptions-=r "remove right-hand scroll bar
 
@@ -60,7 +61,7 @@ set nowb
 " Only works all the time.
 
 silent !mkdir ~/vimfiles/backups > /dev/null 2>&1
-set undodir=~/vimfiles/backups
+set undodir=~/vimfiles/local/backups
 set undofile
 
 " ================ Indentation ======================

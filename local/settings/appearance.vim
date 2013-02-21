@@ -7,8 +7,6 @@ if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
 
-  " http://ethanschoonover.com/solarized/vim-colors-solarized
-  " TODO find a way to remove explicity require
   autocmd VimEnter * colorscheme wombat
 
   " Show tab number (useful for Cmd-1, Cmd-2.. mapping)

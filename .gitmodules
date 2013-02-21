@@ -1,3 +1,9 @@
 [submodule "local/packages/pathogen"]
 	path = local/packages/pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule "local/packages/nerdtree"]
+	path = local/packages/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "local/packages/nerdtree-tabs"]
+	path = local/packages/nerdtree-tabs
+	url = git://github.com/jistr/vim-nerdtree-tabs.git
