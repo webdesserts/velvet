@@ -1,5 +1,6 @@
 " TODO figure out how to get this working inside of "gui_running"
 set guifont=Source_Code_Pro_Light:h12:cANSI
+colorscheme desert
 
 " Make it beautiful - colors and fonts
 if has("gui_running")
@@ -8,8 +9,7 @@ if has("gui_running")
 
   " http://ethanschoonover.com/solarized/vim-colors-solarized
   " TODO find a way to remove explicity require
-  autocmd VimEnter * source ~/vimfiles/local/packages/wombat/autoload/wombat.vim
-  "colorscheme wombat
+  autocmd VimEnter * colorscheme wombat
 
   " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
   " For some reason this doesn't work as a regular set command,

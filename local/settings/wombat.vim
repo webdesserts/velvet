@@ -54,4 +54,4 @@ hi! Type gui=bold
 
 
 " Enforce the colors set here
-au VimEnter * so ~/vimfiles/plugin/settings/wombat.vim
+au VimEnter * so ~/vimfiles/local/settings/wombat.vim
