@@ -7,3 +7,9 @@
 [submodule "local/packages/nerdtree-tabs"]
 	path = local/packages/nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "local/packages/indent-guides"]
+	path = local/packages/indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "local/packages/matchit"]
+	path = local/packages/matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
