@@ -9,12 +9,11 @@ set nocompatible
 " This loads all the plugins in ~/vimfiles/bundle
 " Use tpope's pathogen plugin to manage all other plugins
 
-  runtime local/packages/pathogen/autoload/pathogen.vim
-  call pathogen#infect('local/packages/{}', '~/vimfiles/local/packages/{}')
+runtime local/packages/pathogen/autoload/pathogen.vim
+call pathogen#infect('local/packages/{}', '~/vimfiles/local/packages/{}')
 
 " load all scripts from the settings directory
-  runtime! local/settings/*.vim
-
+runtime! local/settings/*.vim
 
 " ================ Menus =============================
 
