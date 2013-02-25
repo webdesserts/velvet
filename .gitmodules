@@ -13,3 +13,6 @@
 [submodule "local/packages/matchit"]
 	path = local/packages/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
+[submodule "local/packages/sparkup"]
+	path = local/packages/sparkup
+	url = git://github.com/rstacruz/sparkup.git
