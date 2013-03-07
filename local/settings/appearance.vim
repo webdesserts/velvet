@@ -7,7 +7,7 @@ if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
 
-  autocmd VimEnter * colorscheme wombat
+  autocmd VimEnter * colorscheme solarized
 
   " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
   " For some reason this doesn't work as a regular set command,

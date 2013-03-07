@@ -16,3 +16,9 @@
 [submodule "local/packages/sparkup"]
 	path = local/packages/sparkup
 	url = git://github.com/rstacruz/sparkup.git
+[submodule "local/packages/solarized"]
+	path = local/packages/solarized
+	url = git://github.com/skwp/vim-colors-solarized.git
+[submodule "local/packages/vim-javascript"]
+	path = local/packages/vim-javascript
+	url = git://github.com/pangloss/vim-javascript.git
