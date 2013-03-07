@@ -22,3 +22,6 @@
 [submodule "local/packages/vim-javascript"]
 	path = local/packages/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
+[submodule "local/packages/vim-surround"]
+	path = local/packages/vim-surround
+	url = git://github.com/tpope/vim-surround.git
