@@ -25,3 +25,15 @@
 [submodule "local/packages/vim-surround"]
 	path = local/packages/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "local/packages/splitjoin"]
+	path = local/packages/splitjoin
+	url = git://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "local/packages/stylus"]
+	path = local/packages/stylus
+	url = git://github.com/wavded/vim-stylus.git
+[submodule "local/packages/mustache"]
+	path = local/packages/mustache
+	url = https://github.com/juvenn/mustache.vim
+[submodule "local/packages/less"]
+	path = local/packages/less
+	url = git://github.com/groenewege/vim-less.git
