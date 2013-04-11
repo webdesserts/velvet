@@ -37,6 +37,3 @@
 [submodule "local/packages/less"]
 	path = local/packages/less
 	url = git://github.com/groenewege/vim-less.git
-[submodule "local/packages/json"]
-	path = local/packages/json
-	url = git://github.com/elzr/vim-json.git
