@@ -59,4 +59,10 @@ hi! Visual ctermbg=233
 hi! Type gui=bold
 
 " Enforce the colors set here
-au VimEnter * so ~/.vim/local/settings/solarized.vim
+
+if has('win32') || has('win64')
+  au VimEnter * so $HOME/vimfiles/local/settings/solarized.vim
+else
+  au VimEnter * so $HOME/.vim/local/settings/solarized.vim
+end
+
