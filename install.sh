@@ -3,6 +3,7 @@
 os=$OSTYPE
 pwd=`pwd`
 
+#TODO: Don't expect people to have GOW installed on Windows
 
 echo $os
 if [[ "$os" = linux* ]]; then
@@ -18,6 +19,7 @@ fi
   # move ~/.vim directory
   if [[ -d $vimfiles ]]; then
     echo "vim folder found. cleaning."
+    cp $vimfiles $vimfiles.backup
     rm -rf $vimfiles
   fi
   echo "creating vim link"
@@ -26,6 +28,7 @@ fi
   # move .vimrc
   if [[ -f $vimrc ]]; then
     echo "removing current vimrc"
+    cp $vimrc $vimrc.backup
     rm $vimrc
   fi
   echo "creating vimrc ln"
