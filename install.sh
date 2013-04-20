@@ -1,9 +1,5 @@
 #! /bin/bash
 
-echo "Installing Packages"
-
-vim +BundleInstall +qall
-
 os=$OSTYPE
 
 echo $os
@@ -28,3 +24,6 @@ if [[ "$os" = linux* ]]; then
 else
   echo "assuming windows"
 fi
+
+echo "Installing Packages"
+vim +BundleInstall +qall
