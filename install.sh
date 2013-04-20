@@ -1,38 +1,40 @@
 #! /bin/bash
 
-os=$OSTYPE
-pwd=`pwd`
+function link {
+  echo "linking $1"
+  ln -s $1 $2
+}
 
-#TODO: Don't expect people to have GOW installed on Windows
 
-echo $os
-if [[ "$os" = msys ]]; then
-  echo "windows system detected"
-  vimfiles=$HOME/vimfiles
-  vimrc=$HOME/_vimrc
-else
-  echo "assuming linux"
-  vimfiles=$HOME/.vim
-  vimrc=$HOME/.vimrc
-fi
-
-  # move ~/.vim directory
-  if [[ -d $vimfiles ]]; then
-    echo "vim folder found. cleaning."
-    cp $vimfiles $vimfiles.backup
-    rm -rf $vimfiles
+function backup {
+  echo "backing up $1"
+  if [[ ! -L $1 ]]; then 
+    [[ -e $1.backup ]] && rm -rf $1.backup
+    cp -r $1 $1.backup
   fi
-  echo "creating vim link"
-  ln -s $pwd $vimfiles
+}
 
-  # move .vimrc
-  if [[ -f $vimrc ]]; then
-    echo "removing current vimrc"
-    cp $vimrc $vimrc.backup
-    rm $vimrc
+function clean {
+  echo "cleaning $1"
+
+  if [[ -e $1 && ! -L $1 ]]; then
+    rm -rf $1
   fi
-  echo "creating vimrc ln"
-  ln local/vimrc $vimrc
+}
+
+
+vim=.vim
+vimrc=.vimrc
+
+backup $HOME/$vim
+backup $HOME/$vimrc
+
+clean $HOME/$vim
+clean $HOME/$vimrc
+
+link $HOME/$vim .
+link $HOME/$vimrc ./local/vimrc
 
 echo "Installing Packages"
 vim +BundleInstall +qall
+
