@@ -19,7 +19,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'rstacruz/sparkup'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'skwp/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-surround'
@@ -28,6 +28,7 @@ Bundle 'wavded/vim-stylus'
 Bundle 'juvenn/mustache.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'elzr/vim-json'
+Bundle 'marijnh/tern', {'rtp': 'vim/'}
 
 " Vim Repositories
 Bundle 'matchit.zip'
