@@ -3,4 +3,14 @@ Velvet
 
 > Scrumptious Vim dotfiles for Windows and Linux
 
-This setup currently only works for Windows and requires some nasty manual linking to even get it working there. I'll fix that. Just give me a few.
+Installation
+------------
+
+'''bash
+
+# clone the repo wherever you like
+git clone https://github.com/webdesserts/velvet.git
+# run the install script
+./install.sh
+# profit
+'''
