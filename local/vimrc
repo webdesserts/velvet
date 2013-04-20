@@ -5,12 +5,7 @@ set verbose=0
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" =============== Package/Settings Initialization ===============
-" This loads all the plugins in ~/.vim/local/packages/
-" Use tpope's pathogen plugin to manage all other plugins
-
-runtime local/packages/pathogen/autoload/pathogen.vim
-call pathogen#infect('local/packages/{}', '~/vimfiles/local/packages/{}')
+source ~/.vim/local/vundle.vim
 
 " load all scripts from the settings directory
 runtime! local/settings/*.vim

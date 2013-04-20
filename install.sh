@@ -1,9 +1,8 @@
 #! /bin/bash
 
-echo "pulling submodules"
+echo "Installing Packages"
 
-git submodule init
-git submodule update
+vim +BundleInstall +qall
 
 os=$OSTYPE
 
