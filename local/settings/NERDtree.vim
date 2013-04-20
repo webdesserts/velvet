@@ -1,7 +1,7 @@
 " Make nerdtree look nice
 let NERDTreeMinimalUI = 1
 
-if has("win32")
+if has("win32") || has("win16")
   let NERDTreeDirArrows = 0
   " Adds the missing copy option to NERDTree
   " requires GOW to be installed
