@@ -2,7 +2,7 @@
 set home=%USERPROFILE%
 set localrc=%cd%\local\vimrc
 set vimrc=%home%\_vimrc
-set vim=%home%\_vimfiles
+set vim=%home%\vimfiles
 
 if exist "%vimrc%" (
   echo vimrc already exists
