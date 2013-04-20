@@ -14,6 +14,7 @@ hi! link rubyPseudoVariable Type
 hi! link rubyRailsARAssociationMethod Title
 hi! link rubyRailsARValidationMethod Title
 hi! link rubyRailsMethod Title
+hi! link rubyDoBlock Normal
 hi! link MatchParen DiffText
 
 hi! link CTagsModule Type
@@ -32,6 +33,8 @@ hi! link jClass Title
 hi! link NERDTreeFile Constant
 hi! link NERDTreeDir Identifier
 
+hi! link sassMixinName Function
+hi! link sassDefinition Function
 hi! link sassProperty Type
 hi! link htmlTagName Type
 
@@ -44,14 +47,16 @@ hi! PreProc gui=bold
 " they are now just differently saturated and
 " valued riffs on the background color, making
 " everything play together just a little more nicely.
-"hi! VertSplit guifg=#003745 cterm=NONE term=NONE ctermfg=NONE ctermbg=NONE
-"hi! LineNR guifg=#004C60 gui=bold guibg=#002B36 ctermfg=146
+hi! VertSplit guifg=#003745 cterm=NONE term=NONE ctermfg=NONE ctermbg=NONE
+hi! LineNR guifg=#004C60 gui=bold guibg=#002B36 ctermfg=146
 hi! link NonText VertSplit
+hi! Normal guifg=#77A5B1
+hi! Constant guifg=#00BCE0
+hi! Comment guifg=#52737B
 hi! link htmlLink Include
 hi! CursorLine cterm=NONE gui=NONE
 hi! Visual ctermbg=233
 hi! Type gui=bold
 
-
 " Enforce the colors set here
-au VimEnter * so ~/vimfiles/local/settings/wombat.vim
+au VimEnter * so ~/.vim/local/settings/solarized.vim
