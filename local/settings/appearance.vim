@@ -1,5 +1,9 @@
 " TODO figure out how to get this working inside of "gui_running"
-set guifont=Source_Code_Pro_Light:h12:cANSI
+if has('win32') || has('win64')
+  set guifont=Source_Code_Pro_Light:h12:cANSI
+else
+  set guifont=Source\ Code\ Pro\ Light\ 12
+end
 colorscheme desert
 
 " Make it beautiful - colors and fonts
