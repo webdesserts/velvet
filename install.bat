@@ -13,7 +13,7 @@ if exist "%vimrc%" (
 if exist %vim% (
   echo vimfiles already exist
 ) else (
- mklink %vim% %cd%
+ mklink /D %vim% %cd%
 )
 
 :END
