@@ -1,13 +1,23 @@
-" Debugging
-set verbose=0
+" Removes Vi compatibility. This must come first
+" as it changes the functionality of other settings.
+set nocompatible
+
+filetype off             " required!
+set verbose=0            " Debugging
+
+" make utf-8 characters readable inside vim
 set encoding=utf-8
 set fileencoding=utf-8
 
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
+if has('win32') || has('win16')
+  source ~/vimfiles/local/vundle.vim
+else
+  source ~/.vim/local/vundle.vim
+end
 
-source $VIM/local/vundle.vim
+filetype plugin indent on " required!
 
 " load all scripts from the settings directory
-runtime! local/settings/*.vim
+for file in split(glob('~/vimfiles/local/settings/*.vim'), '\n')
+    exe 'source' file
+endfor

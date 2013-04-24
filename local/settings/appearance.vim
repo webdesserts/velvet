@@ -4,6 +4,10 @@ if has('win32') || has('win64')
 else
   set guifont=Source\ Code\ Pro\ Light\ 12
 end
+
+"turn on syntax highlighting
+syntax on
+
 colorscheme desert
 
 " Make it beautiful - colors and fonts
@@ -21,7 +25,7 @@ if has("gui_running")
   set lines=60
   set columns=190
 else
-  "dont load csapprox if we no gui support - silences an annoying warning
+  "dont load csapprox if we have no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
 endif
 

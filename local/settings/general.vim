@@ -16,15 +16,12 @@ set showmode                    "Show current mode down the bottostm
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
+set cursorline                  "highlight the line your cursor is on
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
-
-"turn on syntax highlighting
-syntax on
-
 
 " ================ Search Settings  =================
 
@@ -48,8 +45,8 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-filetype plugin on
-filetype indent on
+" filetype plugin on
+" filetype indent on
 
 " Display tabs and trailing spaces visually (with dots)
 set list listchars=tab:\ \ ,trail:·
@@ -84,3 +81,5 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+cd .
