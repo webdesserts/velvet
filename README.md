@@ -6,11 +6,14 @@ Velvet
 Installation
 ------------
 
+Clone the repo where ever you like:
 ```bash
-
-# clone the repo wherever you like
 git clone https://github.com/webdesserts/velvet.git
-# run the install script
-./install.sh
-# profit
+```
+
+Run the install script:
+```bash
+./install #for Linux
+# or...
+install #for Windows
 ```
