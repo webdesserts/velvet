@@ -27,5 +27,6 @@ Bundle 'juvenn/mustache.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'elzr/vim-json'
 Bundle 'marijnh/tern', {'rtp': 'vim/'}
+Bundle 'vim-perl/vim-perl'
 Bundle 'skwp/vim-colors-solarized'
 
