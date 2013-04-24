@@ -1,23 +1,32 @@
+
 " Removes Vi compatibility. This must come first
 " as it changes the functionality of other settings.
 set nocompatible
 
-filetype off             " required!
-set verbose=0            " Debugging
+filetype off             " must come before vundle
 
-" make utf-8 characters readable inside vim
-set encoding=utf-8
-set fileencoding=utf-8
-
+"TODO: make this global and reuse it
 if has('win32') || has('win16')
-  source ~/vimfiles/local/vundle.vim
+  let vimfiles="vimfiles"
+  let vimrc="_vimrc"
 else
-  source ~/.vim/local/vundle.vim
+  let vimfiles=".vim"
+  let vimrc=".vimrc"
 end
 
-filetype plugin indent on " required!
+" Find shit
+let vundle=join(["~",vimfiles,"local","vundle.vim"], "/")
+let config=join(["~",vimfiles,"local","config.vim"], "/")
+let settings=split(glob('~/vimfiles/local/settings/*.vim'), '\n')
 
-" load all scripts from the settings directory
-for file in split(glob('~/vimfiles/local/settings/*.vim'), '\n')
+" Source that shit
+exe 'source' config
+exe 'source' vundle
+
+for file in settings
     exe 'source' file
 endfor
+
+filetype plugin indent on " must come after vundle
+
+cd .

@@ -1,12 +1,9 @@
-" TODO figure out how to get this working inside of "gui_running"
+
 if has('win32') || has('win64')
   set guifont=Source_Code_Pro_Light:h12:cANSI
 else
   set guifont=Source\ Code\ Pro\ Light\ 12
 end
-
-"turn on syntax highlighting
-syntax on
 
 colorscheme desert
 
@@ -15,9 +12,7 @@ if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
 
-  " hack to get solarized working
-  autocmd VimEnter * so $HOME/vimfiles/local/packages/vim-colors-solarized/colors/solarized.vim
-  " autocmd VimEnter * colorscheme solarized
+  autocmd VimEnter * colorscheme solarized
 
   " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
   " For some reason this doesn't work as a regular set command,

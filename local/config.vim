@@ -1,7 +1,11 @@
+" Debugging
+set verbose=0
+
 " ================ Menus =============================
 
 " M flag must be set before `syntax` and `filetype` are turned on
 set guioptions+=M "remove menu bar (from source)
+set guioptions-=m "this is only here to prevent bundles from adding extra menuitems
 set guioptions-=L "remove left-hand scroll bar during vertical split (e.g. NERDTree)
 set guioptions-=T "remove toolbar
 set guioptions-=r "remove right-hand scroll bar
@@ -18,10 +22,18 @@ set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set cursorline                  "highlight the line your cursor is on
 
+" make utf-8 characters readable inside vim
+set encoding=utf-8
+set fileencoding=utf-8
+
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
+
+" this must come before syntax and colorscheme bundles!
+" turn on syntax highlighting
+syntax on
 
 " ================ Search Settings  =================
 
@@ -44,9 +56,6 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-
-" filetype plugin on
-" filetype indent on
 
 " Display tabs and trailing spaces visually (with dots)
 set list listchars=tab:\ \ ,trail:·
@@ -75,11 +84,8 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
-
-cd .
