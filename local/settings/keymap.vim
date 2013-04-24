@@ -18,20 +18,30 @@ nnoremap ,ow "_diwhp
 "Clear current search highlight by double tapping //
 nmap <silent> // :nohlsearch<CR>
 
-
-" Move between split windows by using the four directions H, L, I, N
-" (note that  I use I and N instead of J and K because  J already does
-" line joins and K is mapped to GitGrep the current word
+" Ctrl + {h,j,k,l}
+" Move between split windows by using the four directions
 nnoremap <silent> <C-h> <C-w>h
-nnoremap <silent> <C-l> <C-w>l
-nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
 
+" Ctrl + {←,↓,↑,→}
 " Resize windows with arrow keys
-nnoremap <C-Up> <C-w>+
-nnoremap <C-Down> <C-w>-
-nnoremap <C-Left> <C-w><
-nnoremap <C-Right>  <C-w>>
+nnoremap <silent> <C-Left>  <C-w><
+nnoremap <silent> <C-Down>  <C-w>-
+nnoremap <silent> <C-Up>    <C-w>+
+nnoremap <silent> <C-Right> <C-w>>
+
+" Alt + {h,j,k,l}
+" Move window to far {top, bottom, left, right}
+nnoremap <silent> <M-h> <C-w><S-h>
+nnoremap <silent> <M-j> <C-w><S-j>
+nnoremap <silent> <M-k> <C-w><S-k>
+nnoremap <silent> <M-l> <C-w><S-l>
+
+" Alt + (=)
+" equalize all windows heights/widths
+nnoremap <silent> <A-=> <C-w>=
 
 " ===== SplitJoin plugin ====================================================
 nmap sj :SplitjoinSplit<cr>
