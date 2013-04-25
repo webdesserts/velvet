@@ -17,7 +17,7 @@ end
 " Find shit
 let vundle=join(["~",vimfiles,"local","vundle.vim"], "/")
 let config=join(["~",vimfiles,"local","config.vim"], "/")
-let settings=split(glob('~/vimfiles/local/settings/*.vim'), '\n')
+let settings=split(glob(join(['~',vimfiles,'local','settings','*.vim'], "/")),'\n')
 
 " Source that shit
 exe 'source' config

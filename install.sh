@@ -2,7 +2,7 @@
 
 function link {
   echo "linking $1"
-  ln -s $1 $2
+  ln -s $2 $1
 }
 
 
@@ -32,8 +32,8 @@ backup $HOME/$vimrc
 clean $HOME/$vim
 clean $HOME/$vimrc
 
-link $HOME/$vim .
-link $HOME/$vimrc ./local/vimrc
+link $HOME/$vim ./
+link $HOME/$vimrc local/vimrc
 
 echo "Installing Packages"
 vim +BundleInstall +qall
