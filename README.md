@@ -13,7 +13,7 @@ git clone https://github.com/webdesserts/velvet.git
 
 Run the install script:
 ```bash
-./install #for Linux
+./install.sh #for Linux
 # or...
 install #for Windows
 ```
