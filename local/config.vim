@@ -71,6 +71,7 @@ set nofoldenable        "dont fold by default
 
 " ================ Completion =======================
 
+set omnifunc=syntaxcomplete#Complete
 set wildmode=list:longest
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing

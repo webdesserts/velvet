@@ -18,7 +18,7 @@ Bundle 'matchit.zip'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'rstacruz/sparkup', {'rtp': 'vim'}
 Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-surround'
 Bundle 'AndrewRadev/splitjoin.vim'
@@ -26,7 +26,9 @@ Bundle 'wavded/vim-stylus'
 Bundle 'juvenn/mustache.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'elzr/vim-json'
-Bundle 'marijnh/tern', {'rtp': 'vim/'}
+Bundle 'marijnh/tern_for_vim'
+"Bundle 'ervandew/supertab'
+"Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-perl/vim-perl'
 Bundle 'skwp/vim-colors-solarized'
-
+"Bundle 'daylerees/colour-schemes', {'rtp': 'vim'}

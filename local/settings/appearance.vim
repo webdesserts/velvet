@@ -20,7 +20,7 @@ if has("gui_running")
   " (the numbers don't show up) so I made it a VimEnter event
   autocmd VimEnter * set guitablabel=%N:\ %t\ %M
 
-  set guifont=Source\ Code\ Pro\ Light\ 12,
+  set guifont=Source\ Code\ Pro\ Light\ 10,
              \Source_Code_Pro_Light:h12:cANSI,
              \Deja_Vu_Sans_Mono:h12:cANSI,
              \Deja\ Vu\ Sans\ Mono\ 12,
