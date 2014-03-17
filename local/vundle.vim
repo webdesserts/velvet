@@ -27,8 +27,5 @@ Bundle 'juvenn/mustache.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'elzr/vim-json'
 Bundle 'marijnh/tern_for_vim'
-"Bundle 'ervandew/supertab'
-"Bundle 'vim-scripts/AutoComplPop'
 Bundle 'vim-perl/vim-perl'
-Bundle 'skwp/vim-colors-solarized'
-"Bundle 'daylerees/colour-schemes', {'rtp': 'vim'}
+Bundle 'daylerees/colour-schemes', {'rtp': 'vim'}

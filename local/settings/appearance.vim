@@ -1,7 +1,6 @@
 
-
 if (&t_Co >= 88 || &t_Co == '')
-  colorscheme solarized
+  colorscheme peacock
 else
   colorscheme desert
 end
