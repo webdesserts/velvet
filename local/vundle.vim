@@ -1,31 +1,34 @@
-
 if has('win32') || has('win64')
   set rtp+=~/vimfiles/local/packages/vundle/
-  call vundle#rc('$HOME/vimfiles/local/packages/')
+  call vundle#begin('$HOME/vimfiles/local/packages/')
 else
   " Usual quickstart instructions
   set rtp+=~/.vim/local/packages/vundle/
-  call vundle#rc('$HOME/.vim/local/packages/')
+  call vundle#begin('$HOME/.vim/local/packages/')
 endif
 
+
 " let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Vim Repositories
-Bundle 'matchit.zip'
+Plugin 'matchit.zip'
+Plugin 'css3'
 
 " Github Repositories
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim'}
-Bundle 'pangloss/vim-javascript'
-Bundle 'tpope/vim-surround'
-Bundle 'AndrewRadev/splitjoin.vim'
-Bundle 'wavded/vim-stylus'
-Bundle 'juvenn/mustache.vim'
-Bundle 'groenewege/vim-less'
-Bundle 'elzr/vim-json'
-Bundle 'marijnh/tern_for_vim'
-Bundle 'vim-perl/vim-perl'
-Bundle 'daylerees/colour-schemes', {'rtp': 'vim'}
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-surround'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'wavded/vim-stylus'
+Plugin 'juvenn/mustache.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'elzr/vim-json'
+"Plugin 'marijnh/tern_for_vim'
+Plugin 'vim-perl/vim-perl'
+
+call vundle#end()

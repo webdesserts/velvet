@@ -1,8 +1,8 @@
 
 if (&t_Co >= 88 || &t_Co == '')
-  colorscheme peacock
+  "colorscheme peacock
 else
-  colorscheme desert
+  "colorscheme peacock
 end
 
 
