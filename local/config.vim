@@ -21,8 +21,6 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set cursorline                  "highlight the line your cursor is on
-
-" make utf-8 characters readable inside vim
 set encoding=utf-8
 set fileencoding=utf-8
 
@@ -87,6 +85,6 @@ set wildignore+=*.png,*.jpg,*.gif
 
 " ================ Scrolling ========================
 
-set scrolloff=8         "Start scrolling when we're 8 lines away from margins
+set scrolloff=12        "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1

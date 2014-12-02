@@ -43,6 +43,18 @@ nnoremap <silent> <M-l> <C-w><S-l>
 " equalize all windows heights/widths
 nnoremap <silent> <A-=> <C-w>=
 
+" If you visually select something and hit paste
+" that thing gets yanked into your buffer. This
+" and repeatedly pasting it. This changes the paste
+" command in visual mode so that it doesn't overwrite
+" whatever is in your paste buffer.
+
+vnoremap p "_dP
+
+" vim development
+nmap <leader>vr :source ~/.nvimrc<cr>
+nmap <leader>vs :source %<cr>
+
 " ===== SplitJoin plugin ====================================================
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
@@ -50,4 +62,6 @@ nmap sk :SplitjoinJoin<cr>
 " ===== Nerd Tree ===========================================================
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
+
+
 

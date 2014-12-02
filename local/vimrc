@@ -30,4 +30,4 @@ endfor
 
 filetype plugin indent on " must come after vundle
 
-cd .
+cd %:p:h

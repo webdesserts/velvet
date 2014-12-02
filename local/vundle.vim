@@ -16,6 +16,7 @@ Plugin 'matchit.zip'
 Plugin 'css3'
 
 " Github Repositories
+Plugin 'file:///Users/webdesserts/code/neapolitan'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -26,9 +27,13 @@ Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'wavded/vim-stylus'
 Plugin 'juvenn/mustache.vim'
 Plugin 'groenewege/vim-less'
+Plugin 'tpope/vim-repeat'
+Plugin 'juleswang/css.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'elzr/vim-json'
+Plugin 'rking/ag.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'itchyny/lightline.vim'
 "Plugin 'marijnh/tern_for_vim'
-Plugin 'vim-perl/vim-perl'
 
 call vundle#end()
