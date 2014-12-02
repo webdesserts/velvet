@@ -4,13 +4,13 @@
 set nocompatible
 
 filetype off             " must come before vundle
-set shell=/bin/sh
 
 "TODO: make this global and reuse it
 if has('win32') || has('win16')
   let vimfiles="vimfiles"
   let vimrc="_vimrc"
 else
+  set shell=/bin/sh
   let vimfiles=".vim"
   let vimrc=".vimrc"
 end
