@@ -1,7 +1,4 @@
-
-" Removes Vi compatibility. This must come first
-" as it changes the functionality of other settings.
-set nocompatible 
+set nocompatible
 set shell=/bin/sh
 
 let g:velvet = {}
@@ -15,15 +12,15 @@ else
 end
 
 " Find shit
-let config = "~/". g:velvet.vimfiles ."/local/config.vim"
-let plugins = "~/". g:velvet.vimfiles ."/local/plugins.vim"
-let settings = split(glob('~/'.g:velvet.vimfiles.'/local/settings/*.vim'),'\n')
+let g:velvet.config = "~/". g:velvet.vimfiles ."/local/config.vim"
+let g:velvet.plugins = "~/". g:velvet.vimfiles ."/local/plugins.vim"
+let g:velvet.settings = split(glob('~/'.g:velvet.vimfiles.'/local/settings/*.vim'),'\n')
 
 " Source that shit
-exe 'source' config
-exe 'source' plugins
+exe 'source' g:velvet.config
+exe 'source' g:velvet.plugins
 
-for file in settings
+for file in g:velvet.settings
     exe 'source' file
 endfor
 
