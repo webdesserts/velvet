@@ -2,8 +2,8 @@
 let &rtp.=','.g:velvet.plug
 call plug#begin(g:velvet.packages)
 
-
-" Plug '~/neapolitan'
+Plug g:velvet.packages.'vim-plug/'
+Plug g:velvet.packages.'neapolitan/'
 Plug 'matchit.zip'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs', { 'on': 'NERDTreeFocus' }
