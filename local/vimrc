@@ -12,15 +12,22 @@ else
 end
 
 " Find shit
-let g:velvet.config = "~/". g:velvet.vimfiles ."/local/config.vim"
-let g:velvet.plugins = "~/". g:velvet.vimfiles ."/local/plugins.vim"
-let g:velvet.settings = split(glob('~/'.g:velvet.vimfiles.'/local/settings/*.vim'),'\n')
+let g:velvet.rc = fnamemodify(resolve(expand('<sfile>:p')), ':p:~')
+let g:velvet.local = simplify(g:velvet.rc .'/../')
+let g:velvet.root = simplify(g:velvet.local .'/../')
+let g:velvet.config = g:velvet.local ."config.vim"
+let g:velvet.plugins = g:velvet.local ."plugins.vim"
+let g:velvet.settings = g:velvet.local .'settings/'
+let g:velvet.packages = g:velvet.local .'packages/'
+let g:velvet.plug = g:velvet.packages .'vim-plug/'
 
 " Source that shit
 exe 'source' g:velvet.config
 exe 'source' g:velvet.plugins
 
-for file in g:velvet.settings
+let settings_files = split(globpath(g:velvet.settings, '*.vim'), '\n')
+
+for file in settings_files
     exe 'source' file
 endfor
 

@@ -1,8 +1,6 @@
-let plug_path = '~/'. g:velvet.vimfiles .'/local/packages/vim-plug/'
-let packages_path = '$HOME/'. g:velvet.vimfiles .'/local/packages/'
 
-let &rtp.=','.plug_path
-call plug#begin(packages_path)
+let &rtp.=','.g:velvet.plug
+call plug#begin(g:velvet.packages)
 
 
 " Plug '~/neapolitan'
