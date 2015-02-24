@@ -1,24 +1,23 @@
 
 " Removes Vi compatibility. This must come first
 " as it changes the functionality of other settings.
-set nocompatible
-
+set nocompatible 
 set shell=/bin/sh
 
 let g:velvet = {}
 
 if has('win32') || has('win16')
-  let g:velvet.vimfiles="vimfiles"
-  let g:velvet.vimrc="_vimrc"
+  let g:velvet.vimfiles = "vimfiles"
+  let g:velvet.vimrc = "_vimrc"
 else
-  let g:velvet.vimfiles=".vim"
-  let g:velvet.vimrc=".vimrc"
+  let g:velvet.vimfiles = ".vim"
+  let g:velvet.vimrc = ".vimrc"
 end
 
 " Find shit
-let config="~/". g:velvet.vimfiles ."/local/config.vim"
-let plugins="~/". g:velvet.vimfiles ."/local/plugins.vim"
-let settings=split(glob('~/'.g:velvet.vimfiles.'/local/settings/*.vim'),'\n')
+let config = "~/". g:velvet.vimfiles ."/local/config.vim"
+let plugins = "~/". g:velvet.vimfiles ."/local/plugins.vim"
+let settings = split(glob('~/'.g:velvet.vimfiles.'/local/settings/*.vim'),'\n')
 
 " Source that shit
 exe 'source' config
