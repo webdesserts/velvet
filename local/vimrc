@@ -3,31 +3,29 @@
 " as it changes the functionality of other settings.
 set nocompatible
 
-filetype off             " must come before vundle
 set shell=/bin/sh
 
-"TODO: make this global and reuse it
+let g:velvet = {}
+
 if has('win32') || has('win16')
-  let vimfiles="vimfiles"
-  let vimrc="_vimrc"
+  let g:velvet.vimfiles="vimfiles"
+  let g:velvet.vimrc="_vimrc"
 else
-  let vimfiles=".vim"
-  let vimrc=".vimrc"
+  let g:velvet.vimfiles=".vim"
+  let g:velvet.vimrc=".vimrc"
 end
 
 " Find shit
-let vundle=join(["~",vimfiles,"local","vundle.vim"], "/")
-let config=join(["~",vimfiles,"local","config.vim"], "/")
-let settings=split(glob(join(['~',vimfiles,'local','settings','*.vim'], "/")),'\n')
+let config="~/". g:velvet.vimfiles ."/local/config.vim"
+let plugins="~/". g:velvet.vimfiles ."/local/plugins.vim"
+let settings=split(glob('~/'.g:velvet.vimfiles.'/local/settings/*.vim'),'\n')
 
 " Source that shit
 exe 'source' config
-exe 'source' vundle
+exe 'source' plugins
 
 for file in settings
     exe 'source' file
 endfor
-
-filetype plugin indent on " must come after vundle
 
 cd %:p:h
