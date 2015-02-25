@@ -1,5 +1,6 @@
 Velvet
 ======
+[![Stories in Ready](https://badge.waffle.io/webdesserts/velvet.svg?label=ready&title=Ready)](http://waffle.io/webdesserts/velvet)
 
 > Scrumptious Vim dotfiles for Windows and Linux
 
