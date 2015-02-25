@@ -36,5 +36,5 @@ link $HOME/$vim ./
 link $HOME/$vimrc local/vimrc
 
 echo "Installing Packages"
-vim +BundleInstall +qall
+vim +PlugInstall +qall
 
