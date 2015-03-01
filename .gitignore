@@ -1,2 +1,3 @@
+.DS_Store
 plugins/*
 !plugins/vim-plug
