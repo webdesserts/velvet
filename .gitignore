@@ -1,2 +1,2 @@
-local/packages/*
-!local/packages/vundle
+plugins/*
+!plugins/vim-plug

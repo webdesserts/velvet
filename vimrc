@@ -1,1 +1,0 @@
-/Users/webdesserts/code/velvet/local/vimrc
