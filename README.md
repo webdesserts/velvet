@@ -19,10 +19,9 @@ and `.nvimrc` to the directory you installed the repo and `core/nvimrc` respecti
 
 In the following example we install Velvet into our home directory:
 ```bash
-cd ~/
-git clone https://github.com/webdesserts/velvet.git
-ln -s velvet/ .nvim
-ln -s velvet/core/nvimrc .nvimrc
+git clone https://github.com/webdesserts/velvet.git ~/code/velvet
+ln -s ~/code/velvet .nvim
+ln -s ~/code/velvet/core/nvimrc .nvimrc
 nvim +PlugInstall +qall
 ```
 
