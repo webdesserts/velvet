@@ -88,3 +88,8 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=12        "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+" ================ Neovim ============================
+
+" set cursor to swap to line on insert
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
