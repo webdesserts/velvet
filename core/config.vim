@@ -4,26 +4,27 @@ set verbose=0
 " ================ Menus =============================
 
 " M flag must be set before `syntax` and `filetype` are turned on
-set guioptions+=M "remove menu bar (from source)
-set guioptions-=m "this is only here to prevent bundles from adding extra menuitems
-set guioptions-=L "remove left-hand scroll bar during vertical split (e.g. NERDTree)
-set guioptions-=T "remove toolbar
-set guioptions-=r "remove right-hand scroll bar
+set guioptions+=M  " remove menu bar (from source)
+set guioptions-=m  " this is only here to prevent bundles from adding extra menuitems
+set guioptions-=L  " remove left-hand scroll bar during vertical split (e.g. NERDTree)
+set guioptions-=T  " remove toolbar
+set guioptions-=r  " remove right-hand scroll bar
 
 " ================ General Config ====================
 
-set number                      "Line numbers are good
-set backspace=indent,eol,start  "Allow backspace in insert mode
-set history=1000                "Store lots of :cmdline history
-set gcr=a:blinkon0              "Disable cursor blink
-set visualbell                  "No sounds
-set autoread                    "Reload files changed outside vim
-set cursorline                  "highlight the line your cursor is on
+set number                      " Line numbers are good
 set colorcolumn=80              " 80 line warning column
+set backspace=indent,eol,start  " Allow backspace in insert mode
+set history=1000                " Store lots of :cmdline history
 set noshowcmd                   " don't incomplete cmds down the bottom
 set noshowmode                  " Hide current mode down the bottosm since we have lightline
+set gcr=a:blinkon0              " Disable cursor blink
+set visualbell                  " No sounds
+set autoread                    " Reload files changed outside vim
+set cursorline                  " highlight the line your cursor is on
 set encoding=utf-8
 set fileencoding=utf-8
+set laststatus=2                " force the status line to always appear
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -36,9 +37,9 @@ syntax on
 
 " ================ Search Settings  =================
 
-set incsearch        "Find the next match as we type the search
-set hlsearch         "Hilight searches by default
-set viminfo='100,f1  "Save up to 100 marks, enable capital marks
+set incsearch        " Find the next match as we type the search
+set hlsearch         " Hilight searches by default
+set viminfo='100,f1  " Save up to 100 marks, enable capital marks
 
 " ================ Turn Off Swap Files ==============
 
@@ -59,8 +60,8 @@ set expandtab
 " Display tabs and trailing spaces visually (with dots)
 set list listchars=tab:\ \ ,trail:·
 
-set nowrap       "Don't wrap lines
-set linebreak    "Wrap lines at convenient points
+set nowrap       " Don't wrap lines
+set linebreak    " Wrap lines at convenient points
 
 " ================ Folds ============================
 

@@ -17,6 +17,7 @@ let g:velvet.user.path = g:velvet.root .'user/'
 let g:velvet.user.settings = g:velvet.user.path .'settings/'
 let g:velvet.user.plugins_file = g:velvet.user.path ."plugins.vim"
 
+" Plugin locations
 let g:velvet.plugins = g:velvet.root .'plugins/'
 let g:velvet.config = g:velvet.core.path ."config.vim"
 let g:velvet.plug = g:velvet.plugins .'vim-plug/plug.vim'
