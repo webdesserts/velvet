@@ -21,6 +21,7 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set cursorline                  "highlight the line your cursor is on
+set colorcolumn=80              " 80 line warning column
 set encoding=utf-8
 set fileencoding=utf-8
 
