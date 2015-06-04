@@ -39,20 +39,25 @@ nnoremap <silent> <M-j> <C-w><S-j>
 nnoremap <silent> <M-k> <C-w><S-k>
 nnoremap <silent> <M-l> <C-w><S-l>
 
-" Alt + (=)
+" Alt + {=}
 " equalize all windows heights/widths
 nnoremap <silent> <A-=> <C-w>=
 
 " If you visually select something and hit paste
 " that thing gets yanked into your buffer. This
-" and repeatedly pasting it. This changes the paste
-" command in visual mode so that it doesn't overwrite
-" whatever is in your paste buffer.
+" changes the paste command in visual mode so that
+" it doesn't overwrite whatever is in your paste buffer.
 
 vnoremap p "_dP
 
-" vim development
+" Vim Development
+
+" {leader}vr
+" reload the .nvimrc
 nmap <leader>vr :source ~/.nvimrc<cr>
+
+" {leader}vs
+" source the current file
 nmap <leader>vs :source %<cr>
 
 " ===== SplitJoin plugin ====================================================
