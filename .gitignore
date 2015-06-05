@@ -1,3 +1,4 @@
 .DS_Store
 plugins/*
 !plugins/vim-plug/plug.vim
+!plugins/neapolitan/colors/neapolitan.vim
