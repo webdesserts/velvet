@@ -6,23 +6,23 @@ Velvet
 
 Installation
 ------------
-Velvet is designed to be used with [NeoVim](http://neovim.org/). NeoVim is a
-modern refactor of vim and will eventually allow vim to be usable in a modern
-gui. Until then, it's just a cleaner and better tested vim with more powerful
-plugins. To get started with NeoVim see their
-[Installation Instructions](https://github.com/neovim/neovim/wiki/Installing)
+Velvet is designed to be used with [NeoVim](http://neovim.org/) (but also
+supports regular Vim). NeoVim is a modern refactor of vim and will eventually
+allow vim to be usable in a modern gui. Until then, it's just a cleaner and
+better tested vim with more powerful plugins. To get started with NeoVim see
+their [Installation Instructions](https://github.com/neovim/neovim/wiki/Installing)
 
 Currently you have to install Velvet manually, luckily that's not too hard.
 
-You just need to clone the repo where ever you like and link up your `.nvim`
-and `.nvimrc` to the directory you installed the repo and `core/nvimrc` respectively 
+You just need to clone the repo where ever you like and link up your `.vim`
+and `.vimrc` to the directory you installed the repo and `core/vimrc` respectively 
 
 In the following example we install Velvet into our home directory:
 ```bash
 git clone https://github.com/webdesserts/velvet.git ~/code/velvet
-ln -s ~/code/velvet .nvim
-ln -s ~/code/velvet/core/nvimrc .nvimrc
-nvim +PlugInstall +qall
+ln -s ~/code/velvet .vim
+ln -s ~/code/velvet/core/vimrc .vimrc
+vim +PlugInstall +qall
 ```
 
 Customizing Velvet
