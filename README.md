@@ -14,16 +14,16 @@ their [Installation Instructions](https://github.com/neovim/neovim/wiki/Installi
 
 Currently you have to install Velvet manually, luckily that's not too hard.
 
-You just need to clone the repo where ever you like and link up your `.vim`
-and `.vimrc` to the directory you installed the repo and `core/vimrc` respectively 
+To install, just do the following:
 
-In the following example we install Velvet into our home directory:
 ```bash
-git clone https://github.com/webdesserts/velvet.git ~/code/velvet
-ln -s ~/code/velvet .vim
-ln -s ~/code/velvet/core/vimrc .vimrc
-vim +PlugInstall +qall
+git clone https://github.com/webdesserts/velvet.git
+cd velvet
+./install.sh
 ```
+
+The install script will link your vim dotfiles in your home directory to
+the necessary files and folders in the velvet repo and install your plugins
 
 Customizing Velvet
 ------------------
