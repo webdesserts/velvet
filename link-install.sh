@@ -6,7 +6,7 @@ if [ $# -lt 1 ] || [ $1 == "-h" ]; then
 fi
 
 if [ $1 != "vim" ] && [ $1 != "nvim" ]; then
-    echo "Please specifie whether you are using \"vim\" or \"nvim\""
+    echo "Please specify whether you are using \"vim\" or \"nvim\""
     exit 1
 fi
 
