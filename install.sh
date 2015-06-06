@@ -17,5 +17,5 @@ ln -sf `pwd` ~/.${1}
 ln -sf `pwd`/core/vimrc ~/.${1}rc
 
 # install all our plugins
-$1 +PlugInstall +qall
+$1 +PlugInstall +qall &> /dev/null
 
