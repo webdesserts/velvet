@@ -21,7 +21,6 @@ set noshowmode                  " Hide current mode down the bottosm since we ha
 set gcr=a:blinkon0              " Disable cursor blink
 set visualbell                  " No sounds
 set autoread                    " Reload files changed outside vim
-set cursorline                  " highlight the line your cursor is on
 set encoding=utf-8
 set fileencoding=utf-8
 set laststatus=2                " force the status line to always appear
@@ -34,6 +33,19 @@ set hidden
 " this must come before syntax and colorscheme bundles!
 " turn on syntax highlighting
 syntax on
+
+
+" ================ Single CursorLine  =================
+" cursor line add the bar at your cursor so that it's a bit more visible.
+" normal when you leave a window the cursorline stays visible. The following
+" ensures that only the window that has focus will display a cursorline
+set nocursorline
+
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au BufWinLeave,BufLeave,WinLeave * setlocal nocursorline
+augroup END
 
 " ================ Search Settings  =================
 
