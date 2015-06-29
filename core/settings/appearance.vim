@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme neapolitan
 
 if (&t_Co >= 88 || &t_Co == '')
   "colorscheme default

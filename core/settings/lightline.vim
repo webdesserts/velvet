@@ -1,4 +1,5 @@
 let g:lightline = {
+      \ 'colorscheme': 'neapolitan',
       \ 'active': {
       \   'left': [ [ 'mode' ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
