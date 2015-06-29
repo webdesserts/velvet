@@ -1,2 +1,2 @@
 set textwidth=80
-call lengthmatters#highlight_link_to('ColorColumn')
+call lengthmatters#highlight('ctermbg=1 ctermfg=15')
