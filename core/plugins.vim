@@ -1,10 +1,9 @@
 Plug g:velvet.plugins.'vim-plug/'
 Plug g:velvet.plugins.'neapolitan/'
-Plug 'matchit.zip'
+
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'rstacruz/sparkup', { 'rtp': 'vim'}
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
@@ -14,3 +13,13 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
 Plug 'tommcdo/vim-exchange'
 Plug 'whatyouhide/vim-lengthmatters'
+
+"languages
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'elzr/vim-json'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'rust-lang/rust.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'mattn/emmet-vim'
