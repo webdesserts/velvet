@@ -1,2 +1,4 @@
 set textwidth=80
-call lengthmatters#highlight('ctermbg=1 ctermfg=15')
+let s:color = g:neapolitan.bkg+1
+let s:hi = 'ctermbg=' . (s:color) . ' guibg='. (g:neapolitan.rgb_map[s:color])
+call lengthmatters#highlight(s:hi)

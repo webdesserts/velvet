@@ -1,16 +1,9 @@
 colorscheme neapolitan
 
-if (&t_Co >= 88 || &t_Co == '')
-  "colorscheme default
-else
-  "colorscheme default
-end
-
 " Make it beautiful - colors and fonts
 if has("gui_running")
   "tell the term has 256 colors
   set t_Co=256
-  "colorscheme default
 
   set lines=60
   set columns=190
