@@ -1,4 +1,4 @@
-let s:colors_name="neapolitan"
+let g:colors_name="neapolitan"
 
 set background=dark
 
