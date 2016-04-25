@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cd $(dirname $BASH_SOURCE)
+BASE=$(pwd)
+
 # help text
 if [ $# -lt 1 ] || [ $1 == "-h" ]; then
     echo "How to use: ./install.sh [vim | nvim]"
@@ -12,9 +15,19 @@ if [ $1 != "vim" ] && [ $1 != "nvim" ]; then
     exit 1
 fi
 
+
 # link everything
-ln -sf `pwd` ~/.${1}
-ln -sf `pwd`/core/vimrc ~/.${1}rc
+if [ $1 == "vim" ]; then
+  ln -sf $BASE ~/.vim
+  ln -sf "$BASE/init.vim" ~/.vimrc
+fi
+
+if [ $1 == "nvim" ]; then
+  config=${XDG_CONFIG_HOME:=$HOME/.config}
+
+  mkdir -p $config
+  ln -sf `pwd` "$config/nvim"
+fi
 
 # install all our plugins
 $1 +PlugInstall +qall &> /dev/null
