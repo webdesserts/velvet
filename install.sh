@@ -22,15 +22,15 @@ fi
 
 # link everything
 if [ $1 == "vim" ]; then
-  ln -sf $BASE ~/.vim
-  ln -sf "$BASE/init.vim" ~/.vimrc
+  ln -shf $BASE ~/.vim
+  ln -shf "$BASE/init.vim" ~/.vimrc
 fi
 
 if [ $1 == "nvim" ]; then
   config=${XDG_CONFIG_HOME:=$HOME/.config}
 
   mkdir -p $config
-  ln -sf `pwd` "$config/nvim"
+  ln -shf $BASE "$config/nvim"
 fi
 
 # install all our plugins
