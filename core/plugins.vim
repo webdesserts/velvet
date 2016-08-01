@@ -1,12 +1,12 @@
 Plug g:velvet.plugins.'vim-plug/'
 Plug g:velvet.plugins.'neapolitan/'
 
+Plug 'Shougo/unite.vim'
+
 Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'rking/ag.vim'
-Plug 'kien/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -18,7 +18,8 @@ Plug 'junegunn/limelight.vim'
 
 "languages
 Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
+Plug 'isRuslan/vim-es6'
+Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-haml' " also contains html & scss
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'

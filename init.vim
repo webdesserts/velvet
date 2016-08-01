@@ -5,7 +5,7 @@ let g:velvet = {'core':{}, 'user':{}}
 
 " Find shit
 let g:velvet.rc = fnamemodify(resolve(expand('<sfile>:p')), ':p:~')
-let g:velvet.root = simplify(g:velvet.rc .'/../../')
+let g:velvet.root = simplify(g:velvet.rc .'/../')
 
 " Local Settings
 let g:velvet.core.path = g:velvet.root .'core/'

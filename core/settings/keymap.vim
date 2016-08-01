@@ -68,5 +68,14 @@ nmap sk :SplitjoinJoin<cr>
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
+" ===== Unite ===============================================================
+" I don't know what all this does yet
+nnoremap <leader>t :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
+nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
+nnoremap <leader>b :<C-u>Unite -no-split -buffer-name=buffer  buffer<cr>
+nnoremap <leader>r :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
+nnoremap <leader>o :<C-u>Unite -no-split -buffer-name=outline -start-insert outline<cr>
+nnoremap <leader>y :<C-u>Unite -no-split -buffer-name=yank    history/yank<cr>
+
 
 
