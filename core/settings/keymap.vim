@@ -20,10 +20,10 @@ nmap <silent> // :nohlsearch<CR>
 
 " Ctrl + {h,j,k,l}
 " Move between split windows by using the four directions
-nnoremap <silent> <C-h> <C-w>h
-nnoremap <silent> <C-j> <C-w>j
-nnoremap <silent> <C-k> <C-w>k
-nnoremap <silent> <C-l> <C-w>l
+nnoremap <silent> <C-h> <C-w><C-h>
+nnoremap <silent> <C-j> <C-w><C-j>
+nnoremap <silent> <C-k> <C-w><C-k>
+nnoremap <silent> <C-l> <C-w><C-l>
 
 " Ctrl + {←,↓,↑,→}
 " Resize windows with arrow keys
