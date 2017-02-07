@@ -4,3 +4,4 @@
 
 "The following would include vim-javascript directly from github
 "Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
