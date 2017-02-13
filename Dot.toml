@@ -1,0 +1,11 @@
+[package]
+name = "velvet"
+authors = [ "Michael Mullins <michael@webdesserts.com>" ]
+
+[execute]
+install = [ "nvim +PlugInstall +qall &> /dev/null" ]
+update = [ "nvim +PlugClean +PlugUpddate +qall &> /dev/null" ]
+
+[link]
+"./" = "~/.config/nvim"
+
