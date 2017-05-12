@@ -4,6 +4,8 @@ Velvet
 
 > Scrumptious Vim dotfiles for Unix systems
 
+> **Note** This is the v1 branch of velvet that uses a standard install script.
+
 Installation
 ------------
 Velvet is designed to be used with [NeoVim](http://neovim.org/) (but also
@@ -17,7 +19,7 @@ Currently you have to install Velvet manually, luckily that's not too hard.
 To install, just do the following:
 
 ```bash
-git clone https://github.com/webdesserts/velvet.git
+git clone -b v1 https://github.com/webdesserts/velvet.git
 cd velvet
 ./install.sh
 ```
