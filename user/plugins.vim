@@ -5,3 +5,5 @@
 "The following would include vim-javascript directly from github
 "Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+Plug 'racer-rust/vim-racer'
+Plug 'urbit/hoon.vim'

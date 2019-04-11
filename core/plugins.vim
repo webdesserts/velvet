@@ -16,6 +16,8 @@ Plug 'whatyouhide/vim-lengthmatters'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 "languages
 Plug 'othree/html5.vim'
 Plug 'isRuslan/vim-es6'
@@ -30,7 +32,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'mattn/emmet-vim'
 Plug 'cespare/vim-toml'
 Plug 'junegunn/vim-xmark', { 'do': 'make' } 
-
 
 "Testing
 Plug 'guns/xterm-color-table.vim'

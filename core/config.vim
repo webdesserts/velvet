@@ -47,11 +47,16 @@ augroup CursorLine
   au BufWinLeave,BufLeave,WinLeave * setlocal nocursorline
 augroup END
 
-" ================ Search Settings  =================
+" ================ Search Settings ==================
 
 set incsearch        " Find the next match as we type the search
 set hlsearch         " Hilight searches by default
 set viminfo='100,f1  " Save up to 100 marks, enable capital marks
+
+" ================ Omnicomplete =====================
+
+" set omnifunc=syntaxcomplete#Complete
+" set completeopt=longest,menuone
 
 " ================ Turn Off Swap Files ==============
 
@@ -107,3 +112,5 @@ set sidescroll=1
 
 " set cursor to swap to line on insert
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+
